@@ -100,4 +100,11 @@ export class SearchComponent {
           .subscribe((res: any) => this.renderResults(res));
     }
 
+    renderResults(res: any): void {
+      this.results = null;
+      if (res && res.tracks && res.tracks.items) {
+        this.results = res.tracks.items;
+      }
+    }
+
 }
