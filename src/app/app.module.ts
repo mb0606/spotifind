@@ -13,11 +13,13 @@ import { AppComponent } from './app.component';
 import {SearchComponent} from "./components/search.component";
 
 import { SpotifyService } from './services/spotify.service'
+import {TrackComponent} from "./components/track.component";
 
 @NgModule({
   declarations: [
     AppComponent,
-    SearchComponent
+    SearchComponent,
+    TrackComponent
   ],
   imports: [
     BrowserModule,
