@@ -69,7 +69,7 @@ import {SpotifyService} from "../services/spotify.service";
 })
 export class SearchComponent {
   query: string;
-  results: Object;
+  results: [];
 
   constructor(private spotifyService: SpotifyService,
               private router: Router,

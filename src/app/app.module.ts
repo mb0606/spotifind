@@ -7,6 +7,7 @@ import {
   HashLocationStrategy,
   APP_BASE_HREF
 } from '@angular/common';
+import { routing } from './app.routes'
 
 import { AppComponent } from './app.component';
 import {SearchComponent} from "./components/search.component";
@@ -21,7 +22,8 @@ import { SpotifyService } from './services/spotify.service'
   imports: [
     BrowserModule,
     FormsModule,
-    HttpModule
+    HttpModule,
+    routing
   ],
   providers: [SpotifyService],
   bootstrap: [AppComponent]
