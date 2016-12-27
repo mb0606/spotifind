@@ -15,13 +15,15 @@ import {SearchComponent} from "./components/search.component";
 import { SpotifyService } from './services/spotify.service'
 import {TrackComponent} from "./components/track.component";
 import {ArtistComponent} from "./components/artist.component";
+import {AlbumComponent} from "./components/album.component";
 
 @NgModule({
   declarations: [
     AppComponent,
     ArtistComponent,
     SearchComponent,
-    TrackComponent
+    TrackComponent,
+    AlbumComponent
   ],
   imports: [
     BrowserModule,
