@@ -39,10 +39,12 @@ export class TrackComponent {
   }
 
   back(): void {
+    console.log( this.location)
     this.location.back();
   }
 
   renderTrack(res: any): void {
+    // console.log("response from spotify API track with id", res)
     this.track = res;
   }
 }
