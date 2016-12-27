@@ -26,12 +26,13 @@ export class SpotifyService {
     ]);
   }
 
-  // All functions will call this.search which will then call the query and make the http request
+  // All functions will call this.search or this.query and make the http request
   searchTrack(query: string): Observable<any[]> {
     return this.search(query, 'track');
   }
 
   getTrack(id: string): Observable<any[]> {
+    console.log(id)
     return this.query(`/tracks/${id}`);
   }
 

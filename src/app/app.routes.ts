@@ -10,7 +10,7 @@ import { TrackComponent } from './components/track.component'
 const APP_ROUTES: Routes = [
   { path: '', redirectTo: 'search', pathMatch: 'full' },
   { path: 'search', component: SearchComponent },
-  { path: 'track/:id', component: TrackComponent}
+  { path: 'tracks/:id', component: TrackComponent}
 ];
 
 export const routing = RouterModule.forRoot(APP_ROUTES);
