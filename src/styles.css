@@ -1,1 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
+
+a {
+  color: turquoise;
+}
+a:hover{
+  text-decoration: none;
+  color: darkturquoise;
+}
+
+.navbar-inverse {
+  background-color: #363535;
+  border-color: #080808;
+}
+.navbar-brand > img {
+  margin-top:-10px;
+}

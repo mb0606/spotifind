@@ -35,7 +35,7 @@ import {SpotifyService} from "../services/spotify.service";
         <div class="row">
           <div class="col-sm-6 col-md-4" *ngFor="let t of results"><!-- iterate over results-->
             <div class="thumbnail">
-              <div class="content">
+              <div class="content text-center">
                 <img src="{{ t.album.images[0].url }}" class="img-responsive">
                 <div class="caption">
                   <h3>

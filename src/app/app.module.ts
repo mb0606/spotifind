@@ -16,14 +16,16 @@ import { SpotifyService } from './services/spotify.service'
 import {TrackComponent} from "./components/track.component";
 import {ArtistComponent} from "./components/artist.component";
 import {AlbumComponent} from "./components/album.component";
+import {NavbarComponent} from "./components/navbar.component";
 
 @NgModule({
   declarations: [
+    AlbumComponent,
     AppComponent,
     ArtistComponent,
+    NavbarComponent,
     SearchComponent,
-    TrackComponent,
-    AlbumComponent
+    TrackComponent
   ],
   imports: [
     BrowserModule,
