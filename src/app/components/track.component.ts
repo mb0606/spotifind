@@ -7,18 +7,22 @@ import { SpotifyService } from "../services/spotify.service";
   selector: 'app-track',
   template: `
   <div *ngIf="track">
-    <h1>{{ track.name }}</h1>
-
-    <p>
-      <img src="{{ track.album.images[1].url }}">
-    </p>
-
-    <p>
-      <audio controls src="{{ track.preview_url }}"></audio>
-    </p>
-
-    <p><a href (click)="back()">Back</a></p>
-  </div>
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <h1>{{ track.name }}</h1>
+    
+        <p>
+          <img style="width:100%" src="{{ track.album.images[1].url }}">
+        </p>
+    
+        <p>
+          <audio style="width:100%" controls src="{{ track.preview_url }}"></audio>
+        </p>
+        <hr>
+        <h3><a href (click)="back()">< Back</a></h3>
+      </div><!-- offset -->
+    </div><!-- row -->
+  </div><!-- ngIF -->
   
 `
 
